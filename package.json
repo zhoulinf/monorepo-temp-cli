@@ -12,7 +12,7 @@
     "preinstall": "echo '即将安装...'",
     "postinstall": "echo '安装完成'"
   },
-  "keywords": [],
+  "keywords": ["monorepo","monorepo-cli","cli","template"],
   "author": "zhoulinfeng",
   "license": "ISC",
   "dependencies": {
