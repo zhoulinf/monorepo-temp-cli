@@ -1,4 +1,5 @@
 import * as create from './create.js'
+import {catchError} from '../libs/error.js'
 
 /**
  * commandConfigs 数组包含了一组命令配置，每个命令配置对象描述了一个可用的命令及其相关信息。
@@ -23,7 +24,7 @@ const commandConfigs = [
     {
         command:"create",
         description:"创建一个模板项目",
-        action:create.action,
+        action: catchError(create.action),
         arguments:'',
         argumentList:[
             // {
